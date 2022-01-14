@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/class/Player.js" defer></script>
+	<script src="./assets/js/class/Card.js" defer></script>
+	<script src="./assets/js/class/CardPackage.js" defer></script>
+	<script src="./assets/js/app.js" defer></script>
+	<title>BlackJack 2.0</title>
+</head>
+<body>
+	<div class="top-side">
+		<div class="cards-container" id="croupier-container"></div>
+		<div id="score-croupier"></div>
+	</div>
+	<div class="info" id="info">
+		<h2>Information sur la partie</h2>
+	</div>
+	<div class="bottom-side">
+		<div class="btn-group">
+			<button id="hit-btn">Piocher</button>
+			<!-- <button id="double-btn">Double</button> -->
+			<button id="stand-btn">Rester</button>
+		</div>
+		<div class="cards-container" id="player-container">
+		</div>
+		<button class="btn-new-game" id="btn-new-game">Nouvelle Partie</button>
+		<div id="money"></div>
+		<div  id="score-player"></div>
+	</div>
+</body>
+</html>

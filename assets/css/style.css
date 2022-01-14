@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 16pt;
+    outline: none;
+	margin-left: 1rem;
+}
+
+button:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+	cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
+
+.bottom-side, .top-side {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40%;
+	background-color: rgb(240, 255, 241);
+}
+
+.cards-container {
+	display: flex;
+	align-items: center;
+	background-color: rgb(131, 197, 166);
+	height: 90%;
+	width: 50%;
+	border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+	overflow-x: hidden;
+	overflow-x: auto;
+}
+
+.btn-group {
+	position: absolute;
+	left: 30px;
+	bottom: 25px;
+}
+
+.btn-new-game {
+	position: absolute;
+	right: 110px;
+	bottom: 25px;
+}
+
+.info {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+	background-color: rgb(242, 255, 240);
+}
+
+#money {
+	position: absolute;
+	right: 110px;
+	top: 25px;
+	font-size: 1.5rem;
+}
+
+#score-player {
+	position: absolute;
+	left: 110px;
+	top: 25px;
+	font-size: 1.5rem;
+}
+
+#score-croupier {
+	position: absolute;
+	left: 110px;
+	bottom: 25px;
+	font-size: 1.5rem;
+}
+
+.card img {
+	height: 250px;
+	margin-left: 1rem;
+}
